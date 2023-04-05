@@ -19,17 +19,7 @@ const AddTransaction = () => {
 
   const onSumbit = () => {
     const nextId = transactions[transactions.length - 1].id + 1;
-
-    // const nextTransaction = {
-    //   id: nextId,
-    //   text,
-    //   amount,
-    //   isIncome,
-    // };
-
     addNewTransaction(nextId, text, amount, isIncome);
-
-    // console.log(transactions);
   };
 
   return (

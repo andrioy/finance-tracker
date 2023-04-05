@@ -23,7 +23,7 @@ const Balance = () => {
   return (
     <>
       <Typography variant="h3">Your Balance</Typography>
-      <Typography variant="h1">${totalBalance}</Typography>
+      <Typography variant="h1">{totalBalance} BGN</Typography>
     </>
   );
 };

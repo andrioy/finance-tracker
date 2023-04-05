@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { Typography, Box } from "@mui/material";
 import { AppContext } from "../AppContext/AppContext";
-import { textAlign } from "@mui/system";
 
 const IncomeExprenses = () => {
   const { transactions } = useContext(AppContext);
@@ -32,13 +31,13 @@ const IncomeExprenses = () => {
         <Box>
           <Typography variant="h3">Income</Typography>
           <Typography color={"green"} variant="h3">
-            ${income.toFixed(2)} BGN
+            {income.toFixed(2)} BGN
           </Typography>
         </Box>
         <Box sx={{ marginLeft: "20px" }}>
           <Typography variant="h3">Expenses</Typography>
           <Typography variant="h3" color={"red"}>
-            ${expense.toFixed(2)} BGN
+            {expense.toFixed(2)} BGN
           </Typography>
         </Box>
       </Box>
